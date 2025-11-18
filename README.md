@@ -100,27 +100,8 @@ All three algorithms are run on the same source-target pair, and their results a
 
 **Time Complexity**: O((V + E) log V) (same as Dijkstra, but with better constant factors)
 
-## Why Does Bellman-Ford Explore More Nodes?
-
-Bellman-Ford explores more nodes than Dijkstra and A\* for several reasons:
-
-### 1. **Systematic Edge Relaxation**
-- **Bellman-Ford**: In each iteration, it examines **all edges** in the graph, regardless of whether they lead to promising paths
-- **Dijkstra/A\***: Only explore edges from nodes that are already known to be on promising paths (via the priority queue)
-
-### 2. **No Early Termination for Target**
-- **Bellman-Ford**: Must complete up to |V|-1 iterations to guarantee correctness, even if the target is found early
-- **Dijkstra/A\***: Can terminate immediately when the target is popped from the priority queue (guaranteed to be optimal)
-
-### 3. **Exploration Strategy**
-- **Bellman-Ford**: Uses a "relaxation" approach that may update the same node multiple times across iterations
-- **Dijkstra/A\***: Uses a "greedy" approach that explores nodes in order of increasing cost, avoiding redundant exploration
-
-### 4. **Frontier Tracking Difference**
-- **Bellman-Ford's frontier**: Contains nodes whose distances were updated (may include duplicates across iterations)
-- **Dijkstra/A\*'s frontier**: Contains nodes that were actually popped and explored (no duplicates)
-
 **In Summary**: Bellman-Ford trades efficiency for generality—it can handle negative weights and detect cycles, but pays the cost of exploring more of the graph systematically.
+and the reason other algorithms are faster in this problem because they are better in positive values
 
 ##  Algorithm Comparison
 
