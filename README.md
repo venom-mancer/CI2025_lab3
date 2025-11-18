@@ -1,6 +1,6 @@
 # CI2025 Lab 3: Shortest Path Finding Algorithms
 
-This project implements and compares three fundamental shortest path algorithms: **Dijkstra's Algorithm**, **Bellman-Ford Algorithm**, and **A\* Search Algorithm**. The implementation uses NetworkX for graph representation and provides comprehensive tracking of algorithm behavior including frontier exploration, nodes explored, path costs, and execution status.
+This project implements and compares three fundamental shortest path algorithms **POSITIVE VALUE ONLY**: **Dijkstra's Algorithm**, **Bellman-Ford Algorithm**, and **A\* Search Algorithm**. The implementation uses NetworkX for graph representation and provides comprehensive tracking of algorithm behavior including frontier exploration, nodes explored, path costs, and execution status.
 
 ## Project Structure
 
